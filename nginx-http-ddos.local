@@ -1,0 +1,10 @@
+[nginx-http-ddos]
+enabled = true
+filter = nginx-http-ddos
+port    = http,https
+#action = iptables-multiport[name=NoAuthFailures, port="http,https"]
+#logpath = /var/log/nginx*/*access*.log
+logpath = /var/log/nginx*/*error*.log
+bantime  = 10m
+maxretry = 6
+
