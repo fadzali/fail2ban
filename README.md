@@ -11,8 +11,8 @@ change <ADD> to <HOST>
         
 File: /etc/nginx/sites-enabled/ab.conf         
  server {
- # connection limit
-    limit_conn connection_limit_per_ip 60;
+       # connection limit
+       limit_conn connection_limit_per_ip 60;
 
 
 
